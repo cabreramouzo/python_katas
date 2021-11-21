@@ -14,7 +14,5 @@ def fizz_buzz(range_max):
         elif n % 5 == 0:
             print('Buzz')
 
-
-
 if __name__ == "__main__":
     fizz_buzz(sys.argv[1])
