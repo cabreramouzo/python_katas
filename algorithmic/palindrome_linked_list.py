@@ -31,8 +31,8 @@ class Solution:
 
     def isPalindromeList(self, l:[int]) -> bool:
         """
-        | 1 | 2 | 3 | 4 | 4 | 3 | 2 | 1 |
-         i-1  i   p  mid  j  j+1 j+2 j+3
+        | 1 | 2 | 3 | 4 |  4  | 3 | 2 | 1 |
+         i-3 i-2 i-1  i  mid/j j+1 j+2 j+3
         """
         
         n = len(l)
@@ -72,7 +72,6 @@ class Solution:
         
         
 #Tests
-
 def testSimpleLists():
 
     s = Solution()
@@ -98,11 +97,3 @@ def testSimpleLists():
 
 if __name__ == "__main__":
     testSimpleLists()
-
-
-
-
-
-
-
-        
