@@ -24,4 +24,15 @@ class Solution:
                 return num
             d[num] = True
 
+    def findDuplicateArray(self, nums: List[int]) -> int:
+      """
+      Use an Array like a hashtable
+      """
+        for num in nums:
+            idx = abs(num) - 1
+            if nums[idx] > 0:
+                nums[idx] = -nums[idx]
+            else:
+                return abs(num)
+
 
